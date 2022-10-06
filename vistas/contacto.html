@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <script src="https://kit.fontawesome.com/9b263f5881.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <header id="heading" class="header">
+        <a class="header__logo" href="../index.html">O´Burgers</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anchor" href="../index.html">Inicio</a></li>
+                <li class="header__item"><a class="header__anchor" href="menu.html">Nuestro Menu</a></li>
+                <li class="header__item"><a class="header__anchor" href="locales.html">Locales</a></li>
+                <li class="header__item"><a class="header__anchor" href="nosotros.html">Trabaja con Nosotros</a>
+                </li>
+                <li class="header__item"><a class="header__anchor" href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact__section">
+            <div class="contact__div">
+                <h1>Contacto</h1>
+            </div> 
+            <div class="contact__div">
+                <h2 class="contact__subtitulo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, animi culpa consectetur natus ipsa
+                    quis illum error blanditiis ea, beatae harum rerum cupiditate quas laborum odio ullam? Ipsa,
+                    inventore aut.</h2>
+            </div>
+        </section>
+        <section class="contact__section1">
+            <form class="formulario" action="#" method="get" enctype="multipart/form-data">
+                <div class="formulario__div">
+                    <label class="formulario__label" for="name">Tu nombre</label>
+                    <input class="formulario__input" type="text" name="name" id="name" required>
+                </div>
+                <div class="formulario__div">
+                    <label class="formulario__label" for="email">Tu correo electrónico</label>
+                    <input class="formulario__input" type="email" name="email" id="email" required>
+                </div>
+                <div class="formulario__div">
+                    <label class="formulario__label" for="telefono">Telefono</label>
+                    <input class="formulario__input" type="number" name="telefono" id="telefono" required>
+                </div>
+                <div class="formulario__div">
+                    <label class="formulario__label" for="asunto">Asunto</label>
+                    <input class="formulario__input" type="text" name="asunto" id="asunto" required>
+                </div>
+                <div class="formulario__div">
+                    <label class="formulario__label" for="local">Seleccione un local</label>
+                    <select class="formulario__input" name="locales" id="locales" multiple>
+                        <option value="norte" label="Zona Norte"></option>
+                        <option value="sur" label="Zona Sur"></option>
+                        <option value="este" label="Zona Este"></option>
+                        <option value="oeste" label="Zona Oeste"></option>
+                    </select>
+                </div>
+                <div class="formulario__div">
+                    <label class="formulario__label" for="mensaje">Tu mensaje</label>
+                    <textarea class="formulario__input" name="mensaje" id="mensaje"></textarea>
+                </div>
+                <div class="formulario__div">
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="pie__div">
+            <ul class="pie__lista1">
+                <li class="pie__item1"><a class="pie__anchor" href="#heading">Terminos y Condiciones</a></li>
+                <li class="pie__item1"><a class="pie__anchor" href="#heading">Acerca de la Privacidad</a></li>
+            </ul>
+        </div>
+        <div class="pie__div">
+            <p class="pie__texto">2022-2022 - Todos los derechos reservados</p>
+        </div>
+        <div class="pie__div">
+            <ul class="pie__lista2">
+                <li class="pie__item2"><a class="pie__anchor" href="https://facebook.com"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li class="pie__item2"><a class="pie__anchor" href="https://instagram.com"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li class="pie__item2"><a class="pie__anchor" href="https://twitter.com"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li class="pie__item2"><a class="pie__anchor" href="https://discord.com"><i
+                            class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+        <div class="pie__div"><a class="pie__anchor--activo" href="#heading">Volver arriba</a></div>
+    </footer>
+</body>
+
+</html>
