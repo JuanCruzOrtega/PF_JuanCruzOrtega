@@ -11,10 +11,10 @@
 
 .header {
     display: flex;
-    flex-direction: flex;
     justify-content: space-between;
     background-color: rgba(5, 5, 5, 255);
     height: 5rem;
+    grid-area: heading;
 }
 
 .header__nav {
@@ -40,13 +40,13 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-
+    list-style-type: none;
     align-items: flex-end;
 
 }
 
 .header__item {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: rgba(5, 5, 5, 255);
     border: ;
 
@@ -133,17 +133,49 @@ h1 {
 
 /* INICIO ESTILOS HERO-LOCALES*/
 
+.grillaLocales {
+    display: grid;
+    grid-template-rows: 5rem 8rem 1fr 1fr 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "heading heading"
+        "titulo titulo"
+        "locales locales2"
+        "locales3 locales4"
+        "footer footer";
+}
+
 .hero__section {
     background-color: #f3eee8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    */
+    grid-area: locales;
 
+}
+
+.hero__section2 {
+    background-color: #f3eee8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: locales2;
+
+}
+
+.hero__section3 {
+    background-color: #f3eee8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: locales3;
+}
+
+.hero__section4 {
+    background-color: #f3eee8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: locales4;
 
 }
 
@@ -161,16 +193,19 @@ h1 {
 .hero__div--activo {
     background-color: rgba(5, 5, 5, 255);
     padding: 3rem;
+    grid-area: titulo;
 }
 
 
 .hero__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f3eee8;
     padding: 3rem 5rem;
     margin: 2rem;
     border: 1px solid #523429;
     border-radius: 6px;
-    width: 40%;
 }
 
 .hero__text {
@@ -248,7 +283,7 @@ h1 {
     margin-bottom: 2rem;
     align-self: center;
     width: 100%;
-    }
+}
 }
 
 /* COMIENZA ESTILOS MENU */
@@ -276,7 +311,7 @@ h1 {
     background-color: #f3eee8;
 }
 
-.menu{
+.menu {
     background-color: #f3eee8;
 }
 
@@ -337,7 +372,7 @@ h1 {
     max-width: 25rem;
 }
 
-.menu__text{
+.menu__text {
     text-align: justify;
     margin: 2rem;
     max-width: 25rem;
@@ -346,41 +381,55 @@ h1 {
 
 /* COMIENZA ESTILO NOSOTROS*/
 
-.nosotrosTitulo{
+.nosotrosGrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "header header header"
+        "titulo titulo titulo"
+        "nosotros nosotros nosotros"
+        "footer footer footer";
+}
+
+.nosotrosTitulo {
     background-color: rgba(5, 5, 5, 255);
     padding: 2rem;
     text-align: center;
+    grid-area: titulo;
 }
 
-.main__bloque{
+
+.main__bloque {
     background-color: rgba(5, 5, 5, 255);
+    grid-area: nosotros;
+
 }
 
-.bloque__img{
+.bloque__img {
     width: 100%;
     padding: 2rem;
     max-width: 30rem;
-    
+
 }
 
-.bloque{
+.bloque {
     display: flex;
     justify-content: space-between;
 }
 
-.bloque__titulo{
+.bloque__titulo {
     align-self: center;
     margin: 2rem;
     color: #ffffff;
 }
 
-.bloque__desc{
+.bloque__desc {
     color: #ffffff;
     margin: 2rem;
     text-align: justify;
 }
 
-.bloque__article{
+.bloque__article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,7 +445,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     height: 5rem;
-
+    grid-area: footer;
 }
 
 
@@ -457,8 +506,3 @@ h1 {
 
 
 /* MENU GRILLA*/
-
-.menuGrilla{
-    display: grid;
-    
-}
