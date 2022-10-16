@@ -450,6 +450,7 @@ h1 {
 
 .pie__item1 {
     list-style-type: none;
+    margin: 1.rem;
 }
 
 .pie__lista1 {
@@ -457,16 +458,21 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 .pie__texto {
     color: #ffffff;
+    margin: 1.5rem;
+    text-align: center;
+    
 }
 
 
 .pie__anchor {
     display: inline-block;
+    text-align: center;
     text-decoration: none;
     color: #ffffff;
     margin: 0.5rem;
@@ -478,6 +484,7 @@ h1 {
 .pie__div {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .pie__lista2 {
