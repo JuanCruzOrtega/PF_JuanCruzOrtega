@@ -195,8 +195,8 @@ h1 {
 
 .hero__div--activo {
     background-color: rgba(5, 5, 5, 255);
-    padding: 3rem;
-    grid-area: titulo;
+    padding: 1.5rem;
+
 }
 
 
@@ -205,8 +205,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #f3eee8;
-    padding: 3rem 5rem;
-    margin: 2rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
     border: 1px solid #523429;
     border-radius: 6px;
 }
@@ -443,12 +443,8 @@ h1 {
 
 .pie {
     background-color: rgba(5, 5, 5, 255);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 5rem;
-    grid-area: footer;
+    
+
 }
 
 
@@ -463,9 +459,11 @@ h1 {
     align-items: center;
 }
 
+
 .pie__texto {
     color: #ffffff;
 }
+
 
 .pie__anchor {
     display: inline-block;
@@ -476,9 +474,9 @@ h1 {
     align-self: center;
 }
 
+
 .pie__div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -508,4 +506,3 @@ h1 {
 /* FIN ESTILOS DEL PIE*/
 
 
-/* MEDIA QUERYS */
