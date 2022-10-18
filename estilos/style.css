@@ -233,11 +233,10 @@ h1 {
 
 .contact__section {
     display: flex;
-    height: 40vh;
     background-color: rgba(5, 5, 5, 255);
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .contact__div {
@@ -309,9 +308,13 @@ h1 {
 }
 
 .menu__item {
-    margin: 1rem;
+
+    display: flex;
+    /* margin: 1rem; */
+    justify-content: center;
     list-style-type: none;
-    background-color: #f3eee8;
+    /* background-color: #f3eee8; */
+
 }
 
 .menu {
@@ -335,106 +338,86 @@ h1 {
 }
 
 .menu__div--activo {
-    align-self: center;
+    align-content: center;
     justify-content: center;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .menu__h2 {
     text-shadow: 0px 1px 1px rgba(5, 5, 5, 255);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .menu__card {
     background-color: #f3eee8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 6px;
     align-self: center
 }
 
 .menu__img {
-    margin: 2rem;
     width: 100%;
-    max-width: 25rem;
+    
 }
 
 .menu__h3 {
     text-align: center;
     font-size: 1.5rem;
-    max-width: 25rem;
 }
 
 .menu__text {
     text-align: justify;
-    margin: 2rem;
-    max-width: 25rem;
-    flex-wrap: nowrap;
+    margin: 1rem;
 }
 
 /* COMIENZA ESTILO NOSOTROS*/
 
-.nosotrosGrilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    grid-template-areas: "header header header"
-        "titulo titulo titulo"
-        "nosotros nosotros nosotros"
-        "footer footer footer";
-}
 
 .nosotrosTitulo {
     background-color: rgba(5, 5, 5, 255);
-    padding: 2rem;
     text-align: center;
-    grid-area: titulo;
+    padding: 1rem;
 }
 
 
-.main__bloque {
-    background-color: rgba(5, 5, 5, 255);
-    grid-area: nosotros;
-
+.bloque {
+    background-color: #f3eee8
 }
 
 .bloque__img {
     width: 100%;
-    padding: 2rem;
     max-width: 30rem;
+    margin: 1rem;
 
 }
 
-.bloque {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .bloque__titulo {
     align-self: center;
     margin: 2rem;
-    color: #ffffff;
+    color: black
 }
 
 .bloque__desc {
-    color: #ffffff;
-    margin: 2rem;
+    color: black;
+    margin: 1rem;
     text-align: justify;
 }
 
+
+
 .bloque__article {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -443,7 +426,7 @@ h1 {
 
 .pie {
     background-color: rgba(5, 5, 5, 255);
-    
+
 
 }
 
@@ -458,15 +441,14 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 .pie__texto {
     color: #ffffff;
-    margin: 1.5rem;
     text-align: center;
-    
+
 }
 
 
@@ -513,3 +495,29 @@ h1 {
 /* FIN ESTILOS DEL PIE*/
 
 
+/* MEDIA QUERIES */
+
+/* HASTA 320*/
+
+@media screen and (max-width: 320px) {
+    
+    .menu__list {
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f3eee8;
+    }
+
+    .bloque__titulo{
+        max-width: 15rem;
+    }
+
+    .bloque__desc{
+        max-width: 15rem;
+    }
+
+    .bloque__img{
+        max-width: 19rem;
+    }
+}
