@@ -1,0 +1,49 @@
+.header {
+    background-color: rgba(5, 5, 5, 255);
+
+    &__nav {
+        display: flex;
+    }
+
+    &__logo {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 2.5rem;
+    }
+
+    &__logo:hover {
+        color: #cab20a;
+    }
+
+    &__title {
+        font-size: 6rem;
+        color: red;
+        text-decoration: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        list-style-type: none;
+        align-items: flex-end;
+
+    }
+
+    &__item {
+        padding: 0.5rem;
+        background-color: rgba(5, 5, 5, 255);
+    }
+
+    &__anchor {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    &__anchor:hover {
+        color: #cab20a;
+    }
+}

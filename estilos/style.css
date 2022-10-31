@@ -356,16 +356,16 @@ h1 {
 }
 
 .menu__card {
-    background-color: #f3eee8;
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    border-radius: 6px;
-    align-self: center
+    align-self: center;
+    justify-content: center;
 }
 
 .menu__img {
     width: 100%;
+    object-fit: cover;
     
 }
 
@@ -389,11 +389,11 @@ h1 {
 }
 
 
-.bloque {
+.aboutus {
     background-color: #f3eee8
 }
 
-.bloque__img {
+.aboutus__img {
     width: 100%;
     max-width: 30rem;
     margin: 1rem;
@@ -402,7 +402,7 @@ h1 {
 
 
 
-.bloque__titulo {
+.aboutus__titulo {
     align-self: center;
     margin: 2rem;
     color: black
@@ -416,7 +416,7 @@ h1 {
 
 
 
-.bloque__article {
+.aboutus__article {
     display: flex;
     align-items: center;
 }
@@ -509,15 +509,15 @@ h1 {
         background-color: #f3eee8;
     }
 
-    .bloque__titulo{
+    .aboutus__titulo{
         max-width: 15rem;
     }
 
-    .bloque__desc{
+    .aboutus__desc{
         max-width: 15rem;
     }
 
-    .bloque__img{
+    .aboutus__img{
         max-width: 19rem;
     }
 }

@@ -1,0 +1,85 @@
+.menu {
+    background-color: #f3eee8;
+
+    &__H1 {
+        background-color: rgba(5, 5, 5, 255);
+        padding: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f3eee8;
+    }
+
+    &__item {
+
+        display: flex;
+        /* margin: 1rem; */
+        justify-content: center;
+        list-style-type: none;
+        /* background-color: #f3eee8; */
+
+    }
+
+
+    &__anchor {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        padding: 1rem;
+        color: white;
+        background-color: #523429;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .menu__div--activo {
+        align-content: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    &__h2 {
+        text-shadow: 0px 1px 1px rgba(5, 5, 5, 255);
+        font-size: 2rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        align-self: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &__h3 {
+        text-align: center;
+        font-size: 1.5;
+
+    }
+
+    &__text {
+        text-align: justify;
+        margin: 1rem;
+    }
+}

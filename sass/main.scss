@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* background-color: rgba(5, 5, 5, 255) ; */
+
+}
+
+a:hover {
+    color: #cab20a;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/fondoindex.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.principal__seccion {
+    word-spacing: 0.2rem;
+
+
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(5, 5, 5, 255);
+    font-size: 2.5rem;
+    padding-left: 5.3rem;
+    text-align: center;
+    border: 1px solid white;
+
+}
+
+/* FIN ESTILOS INDEX-MAIN*/
+
+.secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/burgerhd.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.tercera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/local4.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.secundario__anchor {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 0px 4px 4px rgba(5, 5, 5, 255);
+    padding-left: 5.3rem;
+}
+
+
+@import "./parciales/header";
+@import "./parciales/hero";
+@import "./parciales/contact";
+@import "./parciales/menu";
+@import "./parciales/formulario";
+@import "./parciales/pie";
+@import "./parciales/aboutus";
+@import "./parciales/media320";

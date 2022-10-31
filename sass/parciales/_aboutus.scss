@@ -1,0 +1,37 @@
+.aboutus {
+    background-color: #f3eee8;
+    
+    &__img {
+        width: 100%;
+        max-width: 30rem;
+        margin: 1rem;
+
+    }
+
+
+
+    &__titulo {
+        align-self: center;
+        margin: 2rem;
+        color: black
+    }
+
+    &__desc {
+        color: black;
+        margin: 1rem;
+        text-align: justify;
+    }
+
+
+
+    &__article {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nosotrosTitulo {
+    background-color: rgba(5, 5, 5, 255);
+    text-align: center;
+    padding: 1rem;
+}
