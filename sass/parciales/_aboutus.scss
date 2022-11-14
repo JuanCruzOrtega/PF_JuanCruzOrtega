@@ -12,6 +12,7 @@
 
     &__titulo {
         align-self: center;
+        text-align: center;
         margin: 2rem;
         color: black
     }
@@ -27,6 +28,7 @@
     &__article {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 

@@ -11,6 +11,7 @@
 
 .contact__subtitulo {
     color: white;
+    text-align: center;
 }
 
 
@@ -19,5 +20,7 @@
 .contact__section1 {
     background-color: #f3eee8;
     padding: 2rem;
-
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
