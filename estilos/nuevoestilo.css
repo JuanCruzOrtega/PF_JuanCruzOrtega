@@ -286,7 +286,6 @@ h1 {
     text-align: justify; }
   .aboutus__article {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center; }
 
@@ -319,3 +318,11 @@ h1 {
     text-align: center; }
   .pie__lista2 {
     padding: 0rem; } }
+
+@media screen and (max-width: 768px) {
+  .aboutus__article {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1024px) {
+  .aboutus__article {
+    flex-direction: column; } }
